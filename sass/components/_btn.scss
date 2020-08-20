@@ -1,0 +1,49 @@
+
+.btn-primary {
+    background-color: $secoundary;
+    padding: 2em 4em;
+    margin-bottom: 3em;
+    color: $dark;
+    border: 2px solid $dark;
+    text-decoration: none;
+    font-weight: $font-black;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all ease-in-out 500ms;
+
+    &:hover {
+        color: $secoundary;
+        background-color: $dark;
+        border-radius: 25%;
+        border: 3px solid #444;
+        
+    }
+
+}
+
+.btn-secoundary {
+    
+    background-color: $dark;
+    padding: 2em 4em;
+    margin-bottom: 3em;
+    color: $white;
+    text-decoration: none;
+    font-weight: $font-black;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 2px solid $white; 
+    transition: all ease-in-out 500ms;
+
+    &:hover {
+        color: $dark;
+        background-color: $secoundary;
+        border-radius: 25%;   
+        border: 2px solid $dark; 
+
+    }
+
+}
+
+.active {
+    border-top: 5px solid $white;
+}

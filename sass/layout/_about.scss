@@ -1,0 +1,22 @@
+main {
+    text-align: center;
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2em 3em 5em;
+            .img {
+                margin:0 2em;
+                img {
+                    width: 100%;
+                }
+            }
+            .lorem {
+                padding: 5em;
+                width: 80%;
+
+            }
+
+        }
+}

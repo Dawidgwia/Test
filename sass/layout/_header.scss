@@ -1,0 +1,117 @@
+.main-header {
+    background-image: radial-gradient(circle at top center, $dark ,$primary);
+    color: $text-white;
+    //border-bottom: black 2px solid;
+
+
+
+    .hero {
+
+        display: flex;
+        padding-top: 5em;
+        width: 90%;
+        flex-wrap: wrap;
+
+
+        .hero-logo {
+            width: 33.33333%;
+            text-align: center;
+            position: relative;
+            animation: foto 3s  forwards;
+            img {
+                border-radius: 75%;
+                width: 50%;
+                max-width: 20rem;
+            }
+        }
+        @keyframes foto {
+            0% {left:-1000px;}
+            100%{left:0;}
+            
+        }
+
+        .hero-name {
+            width: 33.33333%;
+            margin:auto;
+            position: relative;
+            animation: name 3s  forwards;
+        }
+
+        @keyframes name {
+            0% {top:-1000px;}
+            100%{top:0;}
+            
+        }
+        
+        .hero-work {
+            width: 33.33333%;
+            text-align: center;
+            margin:auto;
+            position: relative;
+            animation: work 3s  forwards;
+        }
+
+        @keyframes work {
+            0% {right:-1000px;}
+            100%{right:0;}
+            
+        }
+    }
+    .main-nav {
+        display: flex;
+        justify-content: flex-end;
+        animation-name: nav;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+
+
+        width: 100%;
+
+        .nav-list {
+
+            display: flex;
+            padding: 2em;
+            justify-content: space-around;
+            list-style: none;
+            padding-bottom: 0;
+            transition: all ease-in-out 250ms;
+
+            li:hover {
+                transform: scale(1.08);
+
+            }
+
+            
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: $font-bold;
+                color: $text-white;
+                cursor: pointer;
+                padding: 1em 5em;
+                transition: all ease-in-out 250ms;
+                margin-right: 0.2em;
+
+            }
+            
+            a:hover {
+                background-color: $mint;
+                border: $text-white 1px solid;
+                letter-spacing: 0.15em;
+
+            }
+            
+        }
+        @keyframes nav {
+            0% {opacity: 0;}
+            50%{opacity: 0.5;}
+            100%{opacity: 1;}
+            
+        }
+    }
+    .hamburger {
+            display: none;
+        }
+}

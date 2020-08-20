@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    padding: 0 4em;
+    background-color: #444;
+    color: $white;
+    .footer-text {
+        margin-left: 4.1em;
+        width: 75%;
+        padding-top: 2em;
+
+    }
+    .nav-footer {
+        margin:  3em;
+        li {
+
+            list-style: none;
+            a {
+                color: $white;
+            };
+            
+        }
+    }
+}
+
+.copyright {
+    background-color: black;
+    color: $white;
+    text-align: center;
+}

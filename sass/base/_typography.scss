@@ -1,0 +1,50 @@
+
+ .name-text {
+     @include text($font-light);
+}
+
+.work-text {
+    @include text($font-bold);
+}
+
+.title-large {
+    @include text ($font-black);
+    color: $primary;
+}
+.title-large-max {
+    @include text ($font-black);
+    color: $white;
+}
+
+.contact-large {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: $font-black;
+    letter-spacing: 0.15em;
+    color: $dark;
+}
+.contact-text {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: $font-normal;
+    letter-spacing: 0.1em;
+
+}
+.footer-hedder {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+    
+}.footer-paragraph {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.1em;
+    
+}
+.copyright-text {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.3em;
+    
+}
+
